@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 쓰기</title>
+</head>
+<body>
+    <h2>글 쓰기</h2>
+    <form>
+        <label for="title">제목:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="author">작성자:</label>
+        <input type="text" id="author" name="author" required><br>
+
+        <label for="content">내용:</label>
+        <textarea id="content" name="content" rows="4" required></textarea><br>
+
+        <input type="submit" value="글 저장" action="save_post.php" method="post">
+        <button type="button" onclick="window.location.href='board_list.php'">글 목록</button>
+
+    </form>
+</body>
+</html>
