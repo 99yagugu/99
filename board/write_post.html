@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>글 쓰기</h2>
-    <form>
+    <form action="save_post.php" method="post">
         <label for="title">제목:</label>
         <input type="text" id="title" name="title" required><br>
 
@@ -17,9 +17,8 @@
         <label for="content">내용:</label>
         <textarea id="content" name="content" rows="4" required></textarea><br>
 
-        <input type="submit" value="글 저장" action="save_post.php" method="post">
-        <button type="button" onclick="window.location.href='board_list.php'">글 목록</button>
-
+        <input type="submit" value="글 저장">
     </form>
+    <button type="button" onclick="window.location.href='board_list.php'">글 목록</button>
 </body>
 </html>
