@@ -28,3 +28,15 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button type="button" onclick="window.location.href='write_post.html'">글 작성</button>
+</body>
+</html>
